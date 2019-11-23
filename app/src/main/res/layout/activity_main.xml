@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom"
+        app:fabAlignmentMode="end"
+        app:hideOnScroll="true"
+        app:navigationIcon="@drawable/ic_menu_black_24dp"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/BottomMenu"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:backgroundTint="@color/colorPrimary">
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:src="@drawable/ic_add_black_24dp"
+        android:elevation="4dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
